@@ -3,7 +3,6 @@ package rb.api.santander.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
-import javax.smartcardio.Card;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
