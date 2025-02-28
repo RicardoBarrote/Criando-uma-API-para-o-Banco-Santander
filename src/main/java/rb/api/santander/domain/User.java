@@ -26,7 +26,7 @@ public class User implements Serializable {
     private UUID id;
 
     @Column(nullable = false)
-    private String nome;
+    private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
     private Account account;
