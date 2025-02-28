@@ -1,4 +1,4 @@
-package rb.api.santander.domain;
+package rb.api.santander.domain.model;
 
 import jakarta.persistence.*;
 import lombok.*;

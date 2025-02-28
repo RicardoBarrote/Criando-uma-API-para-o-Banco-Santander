@@ -1,22 +1,19 @@
-package rb.api.santander.domain;
+package rb.api.santander.domain.model;
 
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.math.BigDecimal;
 import java.util.UUID;
 
-@Entity
-@Table(name = "tb_card")
+@MappedSuperclass
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
-public class Card implements Serializable {
+public class BaseItem implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
@@ -25,8 +22,8 @@ public class Card implements Serializable {
     private UUID id;
 
     @Column(nullable = false)
-    private String numero;
+    private String icon;
 
-    @Column(precision = 13, scale = 2, nullable = false)
-    private BigDecimal limite;
+    @Column(nullable = false)
+    private String description;
 }

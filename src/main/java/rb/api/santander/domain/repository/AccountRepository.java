@@ -1,8 +1,7 @@
 package rb.api.santander.domain.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import rb.api.santander.domain.Account;
-import rb.api.santander.domain.User;
+import rb.api.santander.domain.model.Account;
 
 import java.util.UUID;
 
