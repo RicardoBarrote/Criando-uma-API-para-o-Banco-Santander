@@ -1,12 +1,18 @@
 package rb.api.santander.domain;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.UUID;
 
 @MappedSuperclass
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 public class BaseItem implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
